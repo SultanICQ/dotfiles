@@ -1,0 +1,16 @@
+*~
+.DS_Store
+sftp-config.json
+sftp-config-alt.json
+id_rsa.pub
+testphp.php
+
+.idea
+.vagrant
+etc/nginx/sites-enabled
+etc/nginx/snippets
+*.log
+src/cache
+src/config/xml
+src/img/tmp
+.sass-cache

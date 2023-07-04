@@ -1,0 +1,22 @@
+[core]
+	excludesfile = /Users/david/.gitignore_global
+	editor = nano
+	autocrlf = input
+[difftool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	trustExitCode = true
+[user]
+	name = David Garcia Latorre
+	email = sultanicq@gmail.com
+[commit]
+	template = /Users/david/.stCommitMsg
+[pull]
+	rebase = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
