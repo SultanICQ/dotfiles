@@ -1,0 +1,15 @@
+# MacOS
+# ----------------------------------
+# Karabiner
+/os/mac/karabiner-elements/automatic_backups
+
+# Common
+# ----------------------------------
+# Compiled zsh
+shell/zsh/**/**.zwc
+shell/zsh/**/**.zwc.old
+shell/zsh/.zim
+
+# Private Stuff
+/**/**/private-*
+/scripts/private
