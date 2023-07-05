@@ -24,6 +24,9 @@ fi
 
 export FZF_DEFAULT_OPTS="--color=$fzf_colors --reverse"
 
+GPG_TTY=$(tty)
+export GPG_TTY
+
 # ------------------------------------------------------------------------------
 # Path - The higher it is, the more priority it has
 # ------------------------------------------------------------------------------
@@ -44,5 +47,4 @@ export path=(
 	"/usr/bin"
 	"/usr/sbin"
 	"/sbin"
-	"$path"
 )

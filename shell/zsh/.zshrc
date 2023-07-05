@@ -30,4 +30,3 @@ source "$DOTFILES_PATH/shell/zsh/key-bindings.zsh"
 
 source "/usr/local/etc/profile.d/z.sh"
 
-export GPG_TTY=\$(tty)
