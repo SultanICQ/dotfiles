@@ -11,8 +11,10 @@
 [user]
 	name = David Garcia Latorre
 	email = sultanicq@gmail.com
+	signingkey = 8F58C8281DE2FCFF
 [commit]
 	template = /Users/david/.stCommitMsg
+	gpgsign = true
 [pull]
 	rebase = false
 [filter "lfs"]
@@ -20,3 +22,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[tag]
+	gpgsign = true

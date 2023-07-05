@@ -10,6 +10,7 @@
 
 - link:
     ~/.dotly: os/mac/.dotly
+    ~/.gnupg/gpg-agent.conf: os/mac/gpg-agent.conf
 
     # Improved binaries
     ~/bin/bash: /usr/local/bin/bash
@@ -21,3 +22,7 @@
 
     # Global config
     /etc/hosts: os/private-mac/hosts
+
+    # Fonts
+    ~/Library/Fonts/DankMono-Italic.ttf: os/private-mac/Fonts/DankMono-Italic.ttf
+    ~/Library/Fonts/DankMono-Regular.ttf: os/private-mac/Fonts/DankMono-Regular.ttf
