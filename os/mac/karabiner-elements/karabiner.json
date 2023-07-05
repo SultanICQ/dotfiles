@@ -10,10 +10,10 @@
     {
       "complex_modifications": {
         "parameters": {
-          "basic.simultaneous_threshold_milliseconds": 100,
-          "basic.to_delayed_action_delay_milliseconds": 200,
-          "basic.to_if_alone_timeout_milliseconds": 20,
-          "basic.to_if_held_down_threshold_milliseconds": 100
+          "basic.simultaneous_threshold_milliseconds": null,
+          "basic.to_delayed_action_delay_milliseconds": null,
+          "basic.to_if_alone_timeout_milliseconds": null,
+          "basic.to_if_held_down_threshold_milliseconds": null
         },
         "rules": [
           {
@@ -55,7 +55,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "open -a \"IntelliJ IDEA-EAP\""
+                    "shell_command": "open -a \"IntelliJ IDEA\""
                   }
                 ],
                 "type": "basic"
@@ -125,29 +125,6 @@
                 "to": [
                   {
                     "shell_command": "open -a \"Visual Studio Code\""
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "[script] Generate uuid",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "u",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_command",
-                      "left_control",
-                      "left_option"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "shell_command": "$HOME/.dotfiles/bin/sdot utils uuid_code"
                   }
                 ],
                 "type": "basic"

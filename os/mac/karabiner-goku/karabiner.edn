@@ -1,34 +1,21 @@
 {:profiles
  {:Default
   {:default true
-   :alone   20
-   :delay   200
-   :held    100
-   :sim     100}}
+   ;;:alone   20
+   ;;:delay   200
+   ;;:held    100
+   ;;:sim     100
+   }}
  :applications
  {;; To obtain the app ID: `grep -A1 "CFBundleIdentifier" /Applications/The.app/Contents/Info.plist`
   ;; Or better osascript -e 'id of app "Google Chrome"'
-  :Chrome   ["com.google.Chrome", "com.google.Chrome.beta"]
+  :Chrome   ["com.google.Chrome"]
   :Safari   ["com.apple.Safari"]
   :Finder   ["com.apple.finder"]
   :IntelliJ ["com.jetbrains.intellij"]
   :VSCode   ["com.microsoft.VSCode"]
   :Slack    ["com.tinyspeck.slackmacgap"]}
- :froms     {:line-delete              {:modi :left_command :key :delete_or_backspace}
-             :clipboard-history        {:modi [:left_command :left_shift] :key :v}
-             :line-duplicate           {:modi :left_command :key :d}
-             :move-next-screen         {:modi [:left_command :left_shift :left_option] :key :right_arrow}
-             :move-prev-screen         {:modi [:left_command :left_shift :left_option] :key :left_arrow}
-             :selection-extend         {:modi :left_option :key :up_arrow}
-             :selection-shrink         {:modi :left_option :key :down_arrow}
-             :show-recent              {:modi :left_command :key :e}
-             :sidebar-primary-toggle   {:modi :left_command :key :1}
-             :sidebar-secondary-toggle {:modi :left_command :key :2}
-             :create-folder            {:modi [:left_control :left_option :left_command] :key :p}
-             :switch-account           {:modi :left_command :key :caps_lock}
-             :switch-account-esc       {:modi :left_command :key :escape}
-             :zoom-in                  {:modi :left_command :key :equal_sign}
-             :zoom-out                 {:modi :left_command :key :hyphen}}
+
  :templates {:open-app         "open -a \"%s\""
              :type             "/opt/homebrew/bin/skhd -t \"%s\""
              :paste            "$HOME/.dotfiles/bin/sdot mac paste_text \"%s\""
@@ -44,16 +31,13 @@
   {:des   "[launch] iTerm"
    :rules [[:!CTOspacebar [:open-app "iTerm"]]]}
   {:des   "[launch] IntelliJ"
-   :rules [[:!CTOi [:open-app "IntelliJ IDEA-EAP"]]]}
+   :rules [[:!CTOi [:open-app "IntelliJ IDEA"]]]}
   {:des   "[launch] Chrome"
    :rules [[:!CTOc [:open-app "Google Chrome"]]]}
   {:des   "[launch] Slack"
    :rules [[:!CTOs [:open-app "Slack"]]]}
   {:des   "[launch] Visual Studio Code"
    :rules [[:!CTOv [:open-app "Visual Studio Code"]]]}
-
-  {:des   "[script] Generate uuid"
-   :rules [[:!CTOu "$HOME/.dotfiles/bin/sdot utils uuid_code"]]}
 
   {:des   "[script] Show desktop folder"
    :rules [[:!CTOd "open \"$HOME/Desktop\""]]}
