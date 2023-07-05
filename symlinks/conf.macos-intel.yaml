@@ -9,23 +9,23 @@
       - ~/.hushlogin
 
 - link:
-    ~/.dotly: os/mac/.dotly
+      ~/.dotly: os/mac/.dotly
       ~/.gnupg/gpg-agent.conf: os/mac/gpg-agent.conf
       ~/.config/karabiner/karabiner.json: os/mac/karabiner-elements/karabiner.json
       ~/.config/karabiner.edn: os/mac/karabiner-goku/karabiner.edn
-    ~/.skhdrc: os/mac/skhd/skhdrc
+      ~/.skhdrc: os/mac/skhd/skhdrc
 
-    # Improved binaries
-    ~/bin/bash: /usr/local/bin/bash
-    ~/bin/date: /usr/local/bin/gdate
-    ~/bin/find: /usr/local/opt/findutils/bin/gfind
-    ~/bin/make: /usr/local/opt/make/libexec/gnubin/make
-    ~/bin/sed: /usr/local/opt/gnu-sed/libexec/gnubin/sed
-    ~/bin/touch: /usr/local/bin/gtouch
+      # Improved binaries
+      ~/bin/bash: /usr/local/bin/bash
+      ~/bin/date: /usr/local/bin/gdate
+      ~/bin/find: /usr/local/opt/findutils/bin/gfind
+      ~/bin/make: /usr/local/opt/make/libexec/gnubin/make
+      ~/bin/sed: /usr/local/opt/gnu-sed/libexec/gnubin/sed
+      ~/bin/touch: /usr/local/bin/gtouch
 
-    # Global config
-    /etc/hosts: os/private-mac/hosts
+        # Global config (/etc/hosts needs to be a hard link)
+      #/etc/hosts: os/private-mac/hosts
 
-    # Fonts
-    ~/Library/Fonts/DankMono-Italic.ttf: os/private-mac/Fonts/DankMono-Italic.ttf
-    ~/Library/Fonts/DankMono-Regular.ttf: os/private-mac/Fonts/DankMono-Regular.ttf
+      # Fonts
+      ~/Library/Fonts/DankMono-Italic.ttf: os/private-mac/Fonts/DankMono-Italic.ttf
+      ~/Library/Fonts/DankMono-Regular.ttf: os/private-mac/Fonts/DankMono-Regular.ttf
