@@ -7,8 +7,9 @@ alias ls="exa"
 alias ll="exa -l"
 alias la="exa -la"
 alias ~="cd ~"
-alias dotfiles='cd $DOTFILES_PATH'
-alias projects='cd ~/Projects'
+alias dotfiles="cd $DOTFILES_PATH"
+alias projects="cd ~/Projects"
+alias copy="pbcopy"
 
 # Git
 alias gaa="git add -A"
