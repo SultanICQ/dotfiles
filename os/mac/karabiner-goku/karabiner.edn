@@ -30,17 +30,18 @@
   ;; ------------ Launchers ------------
   {:des   "[launch] iTerm"
    :rules [[:!CTOspacebar [:open-app "iTerm"]]]}
-  {:des   "[launch] IntelliJ"
-   :rules [[:!CTOi [:open-app "IntelliJ IDEA"]]]}
   {:des   "[launch] Chrome"
    :rules [[:!CTOc [:open-app "Google Chrome"]]]}
+  {:des   "[script] Show desktop folder"
+   :rules [[:!CTOd "open \"$HOME/Desktop\""]]}
+  {:des   "[launch] IntelliJ"
+   :rules [[:!CTOi [:open-app "IntelliJ IDEA"]]]}
+  {:des   "[launch] KeePassXC"
+   :rules [[:!CTOk [:open-app "KeePassXC"]]]}
   {:des   "[launch] Slack"
    :rules [[:!CTOs [:open-app "Slack"]]]}
   {:des   "[launch] Visual Studio Code"
    :rules [[:!CTOv [:open-app "Visual Studio Code"]]]}
-
-  {:des   "[script] Show desktop folder"
-   :rules [[:!CTOd "open \"$HOME/Desktop\""]]}
 
   ;; ------------ Application specific ------------
 
