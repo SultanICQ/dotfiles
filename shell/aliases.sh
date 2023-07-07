@@ -26,10 +26,6 @@ alias gpl="git pull --rebase --autostash"
 alias gb="git branch"
 alias gl="git pull"
 
-# SSH
-alias sshwebserver="ssh ubuntu@webserver"
-alias sshzabbix="ssh David@zabbix"
-
 # Utils
 alias k='kill -9'
 alias i.='(idea $PWD &>/dev/null &)'
