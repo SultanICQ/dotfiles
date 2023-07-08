@@ -23,7 +23,7 @@
       ~/bin/sed: /usr/local/opt/gnu-sed/libexec/gnubin/sed
       ~/bin/touch: /usr/local/bin/gtouch
 
-        # Global config (/etc/hosts needs to be a hard link)
+      # Global config (/etc/hosts needs to be a hard link)
       #/etc/hosts: os/private-mac/hosts
 
       # Fonts
