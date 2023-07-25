@@ -39,6 +39,8 @@
   {:des   "[launch] KeePassXC"
    :rules [[:!CTOk [:open-app "KeePassXC"]]]}
   {:des   "[launch] Slack"
+   :rules [[:!CTOn [:open-app "Notes"]]]}
+  {:des   "[launch] Slack"
    :rules [[:!CTOs [:open-app "Slack"]]]}
   {:des   "[launch] Visual Studio Code"
    :rules [[:!CTOv [:open-app "Visual Studio Code"]]]}
