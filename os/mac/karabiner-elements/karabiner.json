@@ -17,6 +17,29 @@
         },
         "rules": [
           {
+            "description": "Generate Random Password and Copy it to the Clipboard",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "p",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_command",
+                      "left_control",
+                      "left_option"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "$HOME/.dotfiles/bin/sdot utils random_password"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "[launch] iTerm",
             "manipulators": [
               {
@@ -134,6 +157,24 @@
           {
             "description": "[launch] Slack",
             "manipulators": [
+              {
+                "from": {
+                  "key_code": "n",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_command",
+                      "left_control",
+                      "left_option"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a \"Notes\""
+                  }
+                ],
+                "type": "basic"
+              },
               {
                 "from": {
                   "key_code": "s",

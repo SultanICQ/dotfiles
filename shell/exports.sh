@@ -12,7 +12,7 @@ export CODELY_THEME_STATUS_ICON_KO="😡"
 # ------------------------------------------------------------------------------
 # Languages
 # ------------------------------------------------------------------------------
-#export JAVA_HOME='/Library/Java/JavaVirtualMachines/amazon-corretto-15.jdk/Contents/Home'
+export JAVA_HOME='$HOME/.sdkman/candidates/java/current'
 export GEM_HOME="$HOME/.gem"
 export GOPATH="$HOME/.go"
 
@@ -27,8 +27,11 @@ fi
 
 export FZF_DEFAULT_OPTS="--color=$fzf_colors --reverse"
 
-GPG_TTY=$(tty)
-export GPG_TTY
+# if "Inside a terminal" or else "as a command pipeline"
+if [ -t 1 ] ; then
+    GPG_TTY=$(tty)
+    export GPG_TTY
+fi
 
 # ------------------------------------------------------------------------------
 # Path - The higher it is, the more priority it has

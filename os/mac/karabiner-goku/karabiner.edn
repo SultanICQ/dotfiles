@@ -21,11 +21,15 @@
              :paste            "$HOME/.dotfiles/bin/sdot mac paste_text \"%s\""
              :paste-and-return "$HOME/.dotfiles/bin/sdot mac paste_text \"%s\" --returning"
              :open-in-chrome   "$HOME/.dotfiles/bin/sdot mac open_chrome_url \"%s\""
-             :wait_seconds     "osascript -e 'delay %s'"}
+             :wait_seconds     "osascript -e 'delay %s'"
+             :dot-script       "$HOME/.dotfiles/bin/sdot %s"
+             }
  :main
  [;; ------------ Remaps ------------
 
   ;; ------------ Utils ------------
+  {:des   "Generate Random Password and Copy it to the Clipboard"
+   :rules [[:!CTOp [:dot-script "utils random_password"]]]}
 
   ;; ------------ Launchers ------------
   {:des   "[launch] iTerm"
