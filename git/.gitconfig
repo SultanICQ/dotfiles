@@ -26,3 +26,6 @@
 	gpgsign = true
 [gpg]
 	program = /usr/local/bin/gpg
+
+[includeIf "gitdir:~/Projects/ApiumHub/"]
+    path = ~/.gitconfig-apiumhub
