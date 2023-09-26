@@ -86,11 +86,34 @@
             ]
           },
           {
-            "description": "[script] Show desktop folder",
+            "description": "[launch] DBeaver",
             "manipulators": [
               {
                 "from": {
                   "key_code": "d",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_command",
+                      "left_control",
+                      "left_option"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a \"DBeaver\""
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "[script] Show desktop folder",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "e",
                   "modifiers": {
                     "mandatory": [
                       "left_command",
@@ -155,7 +178,7 @@
             ]
           },
           {
-            "description": "[launch] Slack",
+            "description": "[launch] Notes",
             "manipulators": [
               {
                 "from": {
@@ -174,7 +197,12 @@
                   }
                 ],
                 "type": "basic"
-              },
+              }
+            ]
+          },
+          {
+            "description": "[launch] Slack",
+            "manipulators": [
               {
                 "from": {
                   "key_code": "s",
