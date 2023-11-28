@@ -444,14 +444,7 @@
             }
           ]
         }
-      ],
-      "virtual_hid_keyboard": {
-        "caps_lock_delay_milliseconds": 0,
-        "country_code": 0,
-        "indicate_sticky_modifier_keys_state": true,
-        "keyboard_type": "",
-        "mouse_key_xy_scale": 100
-      }
+      ]
     }
   ]
 }

@@ -29,3 +29,5 @@
 
 [includeIf "gitdir:~/Projects/ApiumHub/"]
     path = ~/.gitconfig-apiumhub
+[init]
+	defaultBranch = main

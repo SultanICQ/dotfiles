@@ -36,4 +36,7 @@ alias o.='open .'
 alias up='dot package update_all'
 alias password='dot utils random_password|copy'
 
-
+alias blade='/Users/david/Library/PackageManager/bin/blade'
+alias mysqldump='/usr/local/Cellar/mysql-client/8.1.0/bin/mysqldump'
+alias mysql='/usr/local/Cellar/mysql-client/8.1.0/bin/mysql'
+alias jmeter='/usr/local/Cellar/jmeter/5.6.2/libexec/bin/jmeter'
