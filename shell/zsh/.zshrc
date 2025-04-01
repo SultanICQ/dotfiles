@@ -37,4 +37,4 @@ export NVM_DIR="$HOME/.nvm"
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-PATH=~/.console-ninja/.bin:$PATH
+PATH=~/.console-ninja/.bin:/opt/homebrew/Cellar/mysql-client@8.4/8.4.3/bin:$PATH
