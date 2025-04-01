@@ -14,6 +14,7 @@
   :Finder   ["com.apple.finder"]
   :IntelliJ ["com.jetbrains.intellij"]
   :VSCode   ["com.microsoft.VSCode"]
+  :Outlook  ["com.microsoft.Outlook"]
   :Slack    ["com.tinyspeck.slackmacgap"]
   :DBeaver  ["org.jkiss.dbeaver.core.product"]}
 
@@ -47,6 +48,8 @@
    :rules [[:!CTOk [:open-app "KeePassXC"]]]}
   {:des   "[launch] Notes"
    :rules [[:!CTOn [:open-app "Notes"]]]}
+  {:des   "[launch] Outlook"
+   :rules [[:!CTOo [:open-app "Microsoft Outlook"]]]}
   {:des   "[launch] Slack"
    :rules [[:!CTOs [:open-app "Slack"]]]}
   {:des   "[launch] Visual Studio Code"
