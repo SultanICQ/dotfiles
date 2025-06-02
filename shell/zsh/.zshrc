@@ -38,3 +38,9 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 PATH=~/.console-ninja/.bin:/opt/homebrew/Cellar/mysql-client@8.4/8.4.3/bin:$PATH
+
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+#fpath=(/Users/david/.docker/completions $fpath)
+#autoload -Uz compinit
+#compinit
+# End of Docker CLI completions
