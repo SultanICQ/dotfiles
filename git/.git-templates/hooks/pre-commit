@@ -1,0 +1,9 @@
+#!/bin/bash
+
+branch="$(git rev-parse --abbrev-ref HEAD)"
+
+if [[ "$branch" == "develop" || "$branch" == "master" ]]; then
+  echo "❌ Está prohibido hacer commits directamente en la rama '$branch'."
+  echo "✅ Por favor, crea una rama de feature antes de continuar."
+  exit 1
+fi

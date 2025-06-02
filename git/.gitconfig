@@ -31,3 +31,4 @@
     path = ~/.gitconfig-apiumhub
 [init]
 	defaultBranch = main
+	templateDir = ~/.git-templates
